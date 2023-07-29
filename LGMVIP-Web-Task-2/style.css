@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: #efefef;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1em;
+    background-color: rgb(51 36 99);
+    color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.container{
+    /* max-width: 100%; */
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:2em;
+    background-color: #caf1f9;
+}
+
+.registrationcontainer {
+    font-weight: 700;
+    justify-self: center;
+    width: 50%; 
+    padding: 2em; 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    font-size: 20px;
+    background-color: #81c3eb;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light, screen;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px; 
+}
+
+.registrationcontainer input {
+    padding: 0.8em;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+    width: 90%;
+    transition: border-color 0.3s ease;
+}
+
+.output{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0.5em;
+    justify-items: center;
+   
+}
+.addData{
+    text-align: center;
+    width:70%;
+    height:auto;
+    padding:1em;
+    border-radius: 5px;
+    background-color: #81c3eb;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.output .addData img{
+    width:150px;
+    height:150px;
+    
+}
+.submit {
+    width: 70%;
+    padding: 11px;
+    color: white;
+    font-weight: 800;
+    background-color: rgb(51 36 99); 
+    border: none; 
+    border-radius: 5px;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer; 
+}
+.submit:hover {
+    background-color: #6076d1; 
+}
+
+/*Responsiveness*/
+@media all and (max-width:900px){
+    .output{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0.5em;
+        justify-items: center;
+        
+    }
+
+}
+@media all and (max-width:400px){
+    .container{
+        padding:0.4em;
+    }
+    .registrationcontainer{
+        padding:0.5em;
+    }
+    .output{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:0.5em;
+        justify-items: center;
+    }
+}
